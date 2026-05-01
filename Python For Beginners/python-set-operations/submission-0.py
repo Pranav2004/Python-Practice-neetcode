@@ -1,0 +1,14 @@
+from typing import List
+
+def count_unique_words(words: List[str]) -> int:
+    my_list = set(words)
+    if len(my_list) == 0:
+        return 0
+    else:
+        return len(my_list)
+
+# do not modify code below this line
+print(count_unique_words(["hello", "world", "hello", "goodbye"]))
+print(count_unique_words(["hello", "world", "i", "am", "world"]))
+print(count_unique_words(["hello", "hello", "hello"]))
+print(count_unique_words([]))
